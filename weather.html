@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/283a888ff2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 id="brand">Weather</h1>
+            <p id="current-location"><i class="fa-solid fa-location-dot"></i><span id="cityName"></span></p>
+            <form class="searchbar" id="change-form">
+                <input type="text" id="location" placeholder="Press Enter">
+            </form>
+        </div>
+        <div class="condition">
+            <img alt="Weather Condition" id="icon">
+            <p id="conditionText">Rainy</p>
+        </div>
+        <div class="overview">
+            <h2 id="temp">08°C</h2>
+            <div class="details">
+            </div>
+            <p id="lastUpdate">06:09 - Sunday, 6 Oct 19</p>
+        </div>
+        <div class="info">
+        </div>
+    </div>
+    <footer>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <p>Developed by: Elyas Barahoueinezhad & inspired by: <a href="https://dribbble.com/">Dribble</a> - <a href="http://codepen.io/">CodePen</a></p>      
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>

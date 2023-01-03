@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Manrope;
+    font-size: 18px;
+    color: #000;
+    height: 100vh;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.nav p i {
+    padding-right: 10px;
+}
+
+#location {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid slategrey;
+    color: slategray;
+}
+
+#location:focus {
+    border: 1px solid #fff;
+    outline: none;
+    background-color: #fff;
+}
+
+.condition {
+    text-align: center;
+    font-size: 40px;
+}
+.condition img {
+    width: 120px;
+}
+
+.overview {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.791);
+    border-radius: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: 100;
+}
+
+.overview #temp {
+    font-size: 8rem;
+}
+
+.overview #cityName {
+    font-size: 5rem;
+}
+
+.overview #conditionText {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overview .item {
+    background-color: rgba(8, 147, 222, 0.172);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 80px;
+    width: 150px;
+    margin: 10px;
+}
+
+.overview #lastUpdate {
+    letter-spacing: 0.25rem;
+}
+.wave {
+    background: rgba(18, 202, 202, 0.22);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 6em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -0.5em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -1em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+footer p {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    bottom: 25px;
+    text-align: center;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
